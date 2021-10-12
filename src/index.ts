@@ -1,5 +1,5 @@
-import { parse } from "./cli";
+import { parse } from './cli';
 
 (async () => {
-	const argv = await parse(process.argv);
+  await parse(process.argv);
 })();
