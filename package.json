@@ -1,5 +1,5 @@
 {
-	"name": "exifr-cli",
+	"name": "@lesjoursfr/exifr-cli",
 	"version": "0.1.0",
 	"description": "CLI for the exifr npm module.",
 	"keywords": [
@@ -23,7 +23,7 @@
 		"build": "npx tsc"
 	},
 	"bin": {
-		"exifr": "dist/index.js"
+		"exifr": "bin/index.js"
 	},
 	"dependencies": {
 		"cli-table": "^0.3.6",
@@ -33,7 +33,7 @@
 	"devDependencies": {
 		"@tsconfig/node14": "^1.0.1",
 		"@types/cli-table": "^0.3.0",
-		"@types/node": "^16.10.5",
+		"@types/node": "^16.10.9",
 		"@types/yargs": "^17.0.3",
 		"@typescript-eslint/eslint-plugin": "^5.0.0",
 		"@typescript-eslint/parser": "^5.0.0",
