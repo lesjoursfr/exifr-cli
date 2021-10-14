@@ -23,6 +23,7 @@ jobs:
     node_js: '14'
     script: npx tsc
     deploy:
+      edge: true
       provider: npm
       email: npmjs@eraud.dev
       api_key:
