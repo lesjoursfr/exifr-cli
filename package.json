@@ -1,6 +1,6 @@
 {
 	"name": "@lesjoursfr/exifr-cli",
-	"version": "0.3.0",
+	"version": "1.0.0",
 	"description": "CLI for the exifr npm module.",
 	"keywords": [
 		"cli",
