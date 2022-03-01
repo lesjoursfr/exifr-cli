@@ -23,6 +23,7 @@
 	},
 	"scripts": {
 		"exifr": "NODE_ENV=development ts-node src/index.ts",
+		"lint": "npx eslint --ext .ts --fix src/",
 		"build": "npx tsc"
 	},
 	"bin": {
@@ -40,11 +41,7 @@
 		"@types/yargs": "^17.0.8",
 		"@typescript-eslint/eslint-plugin": "^5.13.0",
 		"@typescript-eslint/parser": "^5.13.0",
-		"eslint": "^7.32.0",
-		"eslint-config-standard": "^16.0.3",
-		"eslint-plugin-import": "^2.25.4",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^5.2.0",
+		"eslint": "^8.10.0",
 		"ts-node": "^10.5.0",
 		"typescript": "^4.6.2"
 	},

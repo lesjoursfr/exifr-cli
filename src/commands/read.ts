@@ -6,8 +6,8 @@ type Options = {
   file: string;
 };
 
-export const command: string = 'read <file>';
-export const desc: string = 'Read exif data of the file <file>';
+export const command = 'read <file>';
+export const desc = 'Read exif data of the file <file>';
 
 export const builder = (yargs: Argv): Argv => {
   return yargs
@@ -40,8 +40,10 @@ export const handler = async (argv: Arguments<Options>): Promise<void> => {
       colWidths: [10, 30, 140]
     });
 
-    for (const [groupKey, group] of Object.entries<[string, Object]>(parsed)) {
-      for (const [metadata, value] of Object.entries<Object>(group)) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    for (const [groupKey, group] of Object.entries<[string, any]>(parsed)) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      for (const [metadata, value] of Object.entries<any>(group)) {
         table.push([groupKey, metadata, value]);
       }
     }
