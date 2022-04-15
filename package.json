@@ -22,6 +22,7 @@
 		"node": ">=v16.14.2"
 	},
 	"scripts": {
+		"freshlock": "rm -rf node_modules/ && rm .yarn/install-state.gz && rm -r .yarn/cache/ && rm yarn.lock && yarn",
 		"exifr": "NODE_ENV=development ts-node src/index.ts",
 		"lint": "npx eslint --ext .ts --fix src/",
 		"build": "npx tsc"
