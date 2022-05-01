@@ -19,7 +19,7 @@
 		"access": "public"
 	},
 	"engines": {
-		"node": ">=v16.14.2"
+		"node": ">=v16.15.0"
 	},
 	"scripts": {
 		"freshlock": "rm -rf node_modules/ && rm .yarn/install-state.gz && rm -r .yarn/cache/ && rm yarn.lock && yarn",
