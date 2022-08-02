@@ -1,17 +1,16 @@
-import Table from 'cli-table';
-import { parse } from 'exifr';
-import { Arguments, Argv } from 'yargs';
+import Table from "cli-table";
+import { parse } from "exifr";
+import { Arguments, Argv } from "yargs";
 
 type Options = {
   file: string;
 };
 
-export const command = 'read <file>';
-export const desc = 'Read exif data of the file <file>';
+export const command = "read <file>";
+export const desc = "Read exif data of the file <file>";
 
 export const builder = (yargs: Argv): Argv => {
-  return yargs
-    .positional('file', { type: 'string', demandOption: true });
+  return yargs.positional("file", { type: "string", demandOption: true });
 };
 
 export const handler = async (argv: Arguments<Options>): Promise<void> => {
@@ -32,12 +31,12 @@ export const handler = async (argv: Arguments<Options>): Promise<void> => {
       sanitize: true,
       reviveValues: true,
       translateKeys: true,
-      translateValues: true
+      translateValues: true,
     });
 
     const table = new Table({
-      head: ['Group', 'Field', 'Value'],
-      colWidths: [10, 30, 140]
+      head: ["Group", "Field", "Value"],
+      colWidths: [10, 30, 140],
     });
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
