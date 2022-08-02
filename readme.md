@@ -1,5 +1,5 @@
 [![npm version](https://badge.fury.io/js/@lesjoursfr%2Fexifr-cli.svg)](https://badge.fury.io/js/@lesjoursfr%2Fexifr-cli)
-[![Build Status](https://travis-ci.org/lesjoursfr/exifr-cli.svg?branch=stable)](https://travis-ci.org/lesjoursfr/exifr-cli)
+[![QC Checks](https://github.com/lesjoursfr/exifr-cli/actions/workflows/quality-control.yml/badge.svg)](https://github.com/lesjoursfr/exifr-cli/actions/workflows/quality-control.yml)
 
 # exifr-cli
 
