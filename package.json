@@ -42,7 +42,7 @@
 	"devDependencies": {
 		"@tsconfig/node18": "^18.2.2",
 		"@types/cli-table": "^0.3.4",
-		"@types/node": "^20.10.0",
+		"@types/node": "^20.10.1",
 		"@types/yargs": "^17.0.32",
 		"@typescript-eslint/eslint-plugin": "^6.13.1",
 		"@typescript-eslint/parser": "^6.13.1",
