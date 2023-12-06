@@ -22,7 +22,7 @@
 		"node": "18.x || 20.x"
 	},
 	"scripts": {
-		"freshlock": "rm -rf node_modules/ && rm .yarn/install-state.gz && rm -r .yarn/cache/ && rm yarn.lock && yarn",
+		"freshlock": "rm -rf node_modules/ && rm .yarn/install-state.gz && rm yarn.lock && yarn",
 		"exifr": "NODE_ENV=development ts-node src/index.ts",
 		"check-lint": "eslint . --ext .js,.jsx,.ts,.tsx",
 		"check-format": "prettier --check .",
