@@ -2,25 +2,44 @@
 	"search.exclude": {
 		"**/.git/**": true,
 		"**/node_modules/**": true,
-		"**/.yarn/**": true
+		"**/.yarn/**": true,
+		"**/bin/**": true
 	},
-	"search.maintainFileSearchCache": true,
 	"files.exclude": {
 		"**/.git/**": true,
 		"**/node_modules/**": true,
-		"**/.yarn/**": true
+		"**/.yarn/**": true,
+		"**/bin/**": true
 	},
 	"files.watcherExclude": {
 		"**/.git/**": true,
 		"**/node_modules/**": true,
-		"**/.yarn/**": true
+		"**/.yarn/**": true,
+		"**/bin/**": true
 	},
-	"eslint.format.enable": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[typescript]": {
-		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "explicit",
 		"source.organizeImports": "explicit"
-	}
+	},
+	"eslint.enable": true,
+	"eslint.format.enable": true,
+	"prettier.configPath": ".prettierrc.js",
+	"prettier.ignorePath": ".prettierignore",
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"stylelint.enable": true,
+	"stylelint.validate": ["css", "scss"]
 }
