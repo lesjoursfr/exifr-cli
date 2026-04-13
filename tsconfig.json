@@ -3,7 +3,8 @@
 	"compilerOptions": {
 		/* Visit https://aka.ms/tsconfig.json to read more about this file */
 		"outDir": "bin",
-		"rootDir": "src"
+		"rootDir": "src",
+		"types": ["node"]
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "**/*.spec.ts"]
