@@ -19,7 +19,7 @@
 		"access": "public"
 	},
 	"engines": {
-		"node": "22.x || 24.x"
+		"node": "24.x || 26.x"
 	},
 	"scripts": {
 		"freshlock": "rm -rf node_modules/ && rm .yarn/install-state.gz && rm yarn.lock && yarn",
@@ -41,7 +41,7 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "10.0.1",
-		"@tsconfig/node22": "22.0.5",
+		"@tsconfig/node24": "24.0.4",
 		"@types/cli-table": "0.3.4",
 		"@types/node": "24.12.4",
 		"@types/yargs": "17.0.35",
